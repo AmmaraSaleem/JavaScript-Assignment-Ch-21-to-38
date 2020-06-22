@@ -412,7 +412,7 @@ function area_of_rectangle(width,hight){
   }
   document.write(char_count('JSResourceS.com','o'));*/
 
-// ...........................Task 12
+
 
  
 
