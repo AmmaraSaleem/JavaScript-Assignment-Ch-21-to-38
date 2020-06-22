@@ -236,16 +236,210 @@ else
 var date = new Date();
 var min_Milli =date.getTime();
 var convert= min_Milli/(1000*60*60);
-++++document.write("Current Date: "+date+"<br>");
+document.write("Current Date: "+date+"<br>");
 document.write("Elapsed millisecond since January 1,1970: "+min_Milli+"<br>");
 document.write("Elapsed minutes since January 1, 1970: "+convert);
 
+//...........................Task 7
+//...........................Task 8
+var Later_date = new Date("Dec 31,2020");
+document.write(Later_date);
+
+//...........................Task 12
+var date= new Date();
+var past_year=date.getFullYear()-100;
+date.setFullYear(past_year);
+document.write("100 years back, it was "+date);
+
+         
+    
+//...........................Task 13
+var  age=prompt("Enter your age");
+var date= new Date();
+var current_year=date.getFullYear();
+var date_of_birth=(current_year-age);
+document.write("Your age is: "+age+"<br>"+"Your birth year is: "+date_of_birth);
+
+
+
+// ................ CHAPTER N0 35 to 38...............................//
+// ...........................Task 1
 
 
 function date(){
-  document.write(new Date)  
+ document.write(new Date)  
 }
-date(); */
+date();  
+// ...........................Task 2
+
+function full_Name(first_Name,Last_Name){
+document.write("Full Name: "+ first_Name+" "+Last_Name);
+}
+
+full_Name("Ammara","Rehmat");
+// ...........................Task 3
+
+var num1=+prompt("Enter first number");
+var num2=+prompt("Enter second number");
+function sum(n1,n2){
+   return n1+n2
+   
+}
+var result=sum(num1,num2);
+document.write(result);
+
+// ...........................Task 5
+
+var value=+prompt("Enter any number");
+
+function square(num){
+   return num*num;
+   
+}
+var result=square(value);
+document.write("Square of: "+value+" is "+result);
+  // ...........................Task 6
+  
+var value=+prompt("Enter any number");
+function Factorial(value){
+   var ans =1;
+   for(var i=2; i<=value;i++)
+   ans=ans*i;
+   return ans;
+}
+var result=Factorial(value);
+document.write("Factorial of: "+value+" is "+result);
+// ...........................Task 4
+
+
+function calculator(n1, op, n2) {
+    if (op === "+") {
+        return n1 + n2;
+    }
+    else if (op === "-") {
+        return n1 - n2;
+    }
+    else if (op === "*") {
+        return n1 * n2;
+    }
+    else if (op === "/") {
+        return n1 / n2;
+    }
+    else if (op === "%") {
+        return n1 % n2;
+    }
+    else{
+        "Incorrect Operator"
+    }
+}
+
+var result1 =calculator(14,"+",4);
+var result2 =calculator(14,"-",4);
+var result3 =calculator(14,"*",4);
+var result4 =calculator(14,"/",4);
+var result5 =calculator(14,"%",4);
+document.write("Addition "+ result1+"<br>");
+document.write("Substraction " +result2+"<br>");
+document.write("Multiplication "+result3+"<br>");
+document.write("Division "+ result4+"<br>");
+document.write("Modules "+result5);
+
+// ...........................Task 7
+
+var n1=prompt("Enter first number");
+var n2=prompt("Enter second number");
+function counting(start,end){
+    for(var i=start; i<=end; i++)
+    {
+        document.write(i+ "<br>");
+    }
+}
+
+counting(n1,n2);
+
+// ...........................Task 8
+
+// ...........................Task 9
+
+function area_of_rectangle(width,hight){
+ var area =width *hight;
+ return area;
+}
+ var result=area_of_rectangle(5,10)
+ document.write("Area of Rectangle is "+result); */
+
+
+// ...........................Task 11
+
+// function first_letter_Capital(str){
+// return str.replace(/\w\S*/g, function(txt) {
+    // return txt.charAt(0).toUppercase() +txt.substr(1).toLowerCase();
+// }) ;
+ //}
+ //document.write(first_letter_Capital('the quick brown fix')); 
+
+// ...........................Task 10
+
+ /*var word=prompt("Enter any word");
+  function palindrome(letter){
+      var check="";
+      for(var i=word.length-1; i>=0; i--){
+          check+=word[i];
+         
+      }
+      if(word===check)
+      {
+          return word;
+      }
+      else{
+           return "This is not palindrome word";
+      }
+  }
+  var rem_words=palindrome(word);
+  document.write("Palindrome words "+rem_words);
+// ...........................Task 13
+
+  function char_count(string,char){
+ 
+    var letter_Count=0;
+    for(var i=0; i<string.length; i++){
+        if(string.charAt(i)==char){
+            letter_Count+=1;
+        }
+
+    }
+    return letter_Count;
+  }
+  document.write(char_count('JSResourceS.com','o'));*/
+
+// ...........................Task 12
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
