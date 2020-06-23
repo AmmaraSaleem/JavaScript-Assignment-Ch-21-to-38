@@ -96,7 +96,7 @@ else
   
 }
 
-Task 14
+......................................Task 14
 var uni="University of Karachi";
 var spilt= uni.split("");
 {
@@ -260,6 +260,24 @@ var current_year=date.getFullYear();
 var date_of_birth=(current_year-age);
 document.write("Your age is: "+age+"<br>"+"Your birth year is: "+date_of_birth);
 
+//...........................Task 14
+
+var Customer_Name="ABC Customer";
+var Current_Month="February";
+var Number_of_Unit="410";
+var per_unit=16; 
+var late_pay=350;
+
+var Net_Amount_pay=(Number_of_Unit*per_unit);
+var gross_amount=(Net_Amount_pay+late_pay)
+document.write(" Customer Name: "+Customer_Name+"<br>");
+document.write(" Month: "+Current_Month+"<br>");
+document.write(" Number of units: "+Number_of_Unit+"<br>");
+document.write(" Charges per Unit: "+per_unit+"<br>");
+
+document.write("Net Amount Payable(within Due Date): "+Net_Amount_pay+"<br>");
+document.write(" Late payment surcharge: "+late_pay+"<br>");
+document.write(" Gross Amount Payable(after Due Date): "+gross_amount);
 
 
 // ................ CHAPTER N0 35 to 38...............................//
